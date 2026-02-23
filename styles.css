@@ -1,26 +1,4 @@
- /* Day Theme (Light) */
-        .day {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            transition: all 0.3s ease;
-        }
-        
-        .day #ptag {
-            color: #2c3e50;
-        }
-        
-        /* Night Theme (Dark) */
-        .night {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #ecf0f1;
-            transition: all 0.3s ease;
-        }
-        
-        .night #ptag {
-            color: #f8f9fa;
-        }
-        
-        body {
+  body {
             margin: 0;
             padding: 50px;
             min-height: 100vh;
@@ -33,6 +11,7 @@
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
         
         #ptag {
@@ -41,6 +20,26 @@
             line-height: 1.6;
             margin-bottom: 40px;
             text-align: center;
+        }
+        
+        /* Day Theme (Light) */
+        .day {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+        
+        .day #ptag {
+            color: #2c3e50;
+        }
+        
+        /* Night Theme (Dark) */
+        .night {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ecf0f1;
+        }
+        
+        .night #ptag {
+            color: #f8f9fa;
         }
         
         /* Button Day Style */
