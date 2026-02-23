@@ -1,16 +1,86 @@
-#app{
-  height:90vh;
-}
-.night{
-  background-color: black;
-  color:white;
-}
-
-#swap{
-  outline:0;
-}
-
-.button_night{
-  background-color:blue;
-  color:white; 
-}
+ /* Day Theme (Light) */
+        .day {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .day #ptag {
+            color: #2c3e50;
+        }
+        
+        /* Night Theme (Dark) */
+        .night {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ecf0f1;
+            transition: all 0.3s ease;
+        }
+        
+        .night #ptag {
+            color: #f8f9fa;
+        }
+        
+        body {
+            margin: 0;
+            padding: 50px;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #app {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        #ptag {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        /* Button Day Style */
+        .button_day {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255,107,107,0.3);
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .button_day:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+        }
+        
+        /* Button Night Style */
+        .button_night {
+            background: linear-gradient(45deg, #a8edea, #fed6e3);
+            color: #2c3e50;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(168,237,234,0.3);
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .button_night:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(168,237,234,0.4);
+        }
